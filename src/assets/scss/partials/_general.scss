@@ -1,0 +1,49 @@
+/*general*/
+body, html {
+	font:15px/20px $lato-regular;
+	height:100%;
+	background:#fff;
+	color: $color-grey;
+	min-width: 1200px;
+}
+select, input, textarea {
+	font:100%  'latoregular', arial, helvetica, sans-serif;
+	outline:none;
+}
+a {
+	color:$color-grey;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+.page {
+	position:relative;
+	overflow:hidden;
+	min-height:100%;
+}
+
+p {
+	margin: 0 0 20px;
+}
+
+strong, b {
+}
+
+//content
+.wrapper {
+	max-width: 1082px;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: $tablet) {
+  body,html {
+		min-width: 768px;
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	body,html {
+		min-width: 320px;
+	}
+}

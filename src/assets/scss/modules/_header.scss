@@ -1,0 +1,255 @@
+header {
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+  max-width: 1182px;
+  margin: 0 auto;
+  height: 30px;
+  padding: 35px 0;
+
+  .logo {
+    float: left;
+    text-indent: -9999px;
+    overflow: hidden;
+    width: 240px;
+    height: 30px;
+    background: url(../images/logo-dark.png) no-repeat;//logo on white bg
+    margin: 0 7.55% 0 0;
+  }
+
+  nav {
+    float: left;
+    font-family: $open_sans-regular;
+    padding: 4px 0 0 0 ;
+
+    a {
+      float: left;
+      color: $color-grey-nav;
+      margin: 0 0 0 59px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  ul {
+    float: right;
+    margin: -5px 3px 0 0;
+    font-family: $open_sans-regular;
+
+    li {
+      float: right;
+
+      a {
+        display: block;
+        height: 22px;
+        padding: 9px 5px;
+        min-width: 92px;
+        background: $color-blue-light;
+        border-radius: 20px;
+        color: #fff;
+        text-align: center;
+
+        &:hover {
+          background: lighten($color-blue-light, 10%);
+          text-decoration: none;
+        }
+
+        &.empty {
+          background: none !important;
+        }
+      }
+
+      &:first-child {
+        float: left;
+        margin: 0 17px 0 0;
+
+        a {
+          background: $color-blue-dark;
+
+          &:hover {
+            background: lighten($color-blue-dark, 10%);
+          }
+        }
+      }
+    }
+  }
+
+}
+
+//change logo for home page
+.homepage {
+
+  header {
+
+    .logo {
+      background: url(../images/logo.png) no-repeat; //logo on dark bg
+    }
+
+    nav {
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+
+//change header so sign pages
+.sign-up {
+
+  header {
+    background: #2b435e;
+    padding: 35px 9999px;
+    margin: 0 -9999px;
+    max-width: none;
+
+    .header-holder {
+      margin: 0 auto;
+      width: 1182px;
+
+      &:after {
+        content:'';
+        display: block;
+        clear: both;
+      }
+    }
+
+    .logo {
+      background: url(../images/logo.png); //logo on dark bg
+    }
+  }
+}
+
+.mobile-overlay,
+.mobile-trigger {
+  display: none;
+}
+
+
+//tablet state
+@media screen and (max-width: $tablet) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 130px;
+
+    .logo {
+      margin: 0;
+      order:1;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      order:3;
+      width: 100%;
+      float: none;
+      padding: 20px 0 0;
+
+      a {
+        margin: 0;
+      }
+    }
+
+    ul {
+      order:2;
+    }
+  }
+
+  .sign-up {
+
+    header {
+      height: 30px;
+    }
+  }
+}
+
+//mobile
+@media screen and (max-width: $mobile) {
+  header {
+    height: auto;
+    padding: 15px;
+    position: relative;
+    z-index: 900;
+
+    .logo {
+      margin: 0 auto 20px;
+      width: 160px;
+      height: 20px;
+      background-size: 160px 20px !important;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+      li {
+        float: none;
+        margin: 0 20px!important;
+      }
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      right: -200px;
+      bottom: 0;
+      z-index: 999;
+      background: $color-blue-light;
+      width: 200px;
+      display: block;
+      padding: 0;
+
+      a {
+        color: #fff !important;
+        border-bottom: 1px solid $color-form-border;
+        display: block;
+        float: none;
+        padding: 10px;
+      }
+    }
+
+    .mobile-overlay {
+      content:'';
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 998;
+      background: rgba(0,0,0,0.5);
+    }
+
+    .mobile-trigger {
+      display: block;
+      text-indent: -9999px;
+      overflow: hidden;
+      background: url(../images/ico-menu.png) no-repeat;
+      width: 21px;
+      height: 21px;
+      position: absolute;
+      right: 10px;
+      top: 14px;
+    }
+  }
+
+  .sign-up {
+
+    header {
+      height: auto;
+
+      .logo {
+        margin: 0 auto 20px;
+        float: none;
+        display: block;
+      }
+    }
+  }
+}

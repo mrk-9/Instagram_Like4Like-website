@@ -1,0 +1,167 @@
+.txt-holder {
+  overflow: hidden;
+  padding: 3px;
+  border: 1px solid $color-form-border;
+  border-radius: 2px;
+  display: flex;
+  margin: 0 0 30px;
+
+  label {
+    float: left;
+    margin: 0 10px 0 0;
+    padding: 10px 14px 10px 13px;
+    border-right: 1px solid $color-form-border;
+    cursor: pointer;
+    display: flex;
+    text-align: center;//ie fallback
+    justify-content: center;
+    align-items: center;
+
+    img {
+      vertical-align: middle;
+    }
+
+    &:hover {
+      opacity: .9;
+    }
+  }
+
+  input {
+    border: none;
+    background: none;
+    padding: 17px 10px;
+    margin: 0;
+    font: 13px/16px $open-sans-regular;
+    height: 16px;
+    flex:1;
+  }
+}
+
+.password {
+  overflow: hidden;
+
+  .txt-holder {
+    float: right;
+    width: 46%;
+
+    &:first-child {
+      float: left;
+    }
+  }
+}
+
+//login
+.login {
+
+  .txt {
+    margin: 0 0 37px;
+  }
+
+  .btn {
+    margin-bottom: 30px !important;
+  }
+}
+
+//forgot password btn
+.forgot {
+  display: block;
+  text-align: center;
+  color: $color-blue-light;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+
+//radiobuttons
+
+.payment {
+  overflow: hidden;
+  padding: 0 0 61px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    vertical-align: top;
+  }
+
+  label {
+    margin: 0 20px 0 0;
+
+    &:only-child {
+      margin: 0;
+    }
+  }
+}
+
+input[type="radio"] {
+    box-sizing: content-box;
+    background: none;
+    cursor: pointer;
+    display: block;
+    height: 12px;
+    margin: 0 26px 0 6px ;
+    position: relative;
+    width: 12px;
+    -webkit-appearance: none;
+    border-radius: 50%;
+    border: 2px solid $color-form-border;
+}
+input[type="radio"]:after {
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 6px;
+    left: 3px;
+    position: relative;
+    top: 3px;
+    width: 6px;
+}
+input[type="radio"]:checked {
+  border-color: $color-blue-light;
+}
+
+input[type="radio"]:checked + label {
+  color: $color-blue-light;
+}
+
+input[type="radio"]:checked:after {
+    background-color: $color-blue-light;
+}
+
+//checkbox
+.check-row {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  label {
+    padding: 0 0 0 10px !important;
+  }
+}
+
+input[type="checkbox"] {
+  padding: 0;
+  margin: 3px 0 0;
+  position: relative;
+
+  &:after {
+    content:'';
+    background: #fff;
+    border: 1px solid #707070;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: 2;
+  }
+
+  &:checked:before {
+    content:'✓';
+    vertical-align: top;
+    position: absolute;
+    top: -6px;
+    left: 1px;
+    z-index: 3;
+  }
+}

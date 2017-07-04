@@ -1,0 +1,48 @@
+.accordion {
+	text-align: left;
+	width: 880px;
+	margin: 76px auto 82px;
+
+	.item {
+		background: $color-intro;
+		padding: 10px 40px 4px 111px;
+		margin: 0 0 22px;
+		font: 15px/17px $open-sans-regular;
+		color: #767778;
+
+		strong {
+			display: block;
+			font-size: 17px;
+			line-height: 20px;
+			color: $color-blue-heading;
+			padding: 2px 0 12px 71px;
+			margin: 0 0 0 -71px;
+			background: url(../images/arrow-down.png) no-repeat;
+			cursor: pointer;
+
+			&.active {
+				background: url(../images/arrow-up.png) no-repeat;
+			}
+		}
+
+		p {
+			margin: 18px 0 15px;
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.accordion {
+		width: auto;
+
+		.item {
+			padding: 10px 20px 10px 40px;
+
+			strong {
+				margin: 0 0 0 -35px;
+				padding: 2px 0 12px 35px;
+			}
+		}
+	}
+}

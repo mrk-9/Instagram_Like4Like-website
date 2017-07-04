@@ -1,0 +1,56 @@
+footer {
+  padding: 46px 0 0;
+  text-align: center;
+
+  ul {
+    font-size: 0;
+    padding: 0 0 33px;
+
+    li {
+      display: inline-block;
+      font-size: 15px;
+      line-height: 18px;
+      padding: 0 2.55%;
+    }
+  }
+
+  .copy {
+    padding: 12px 9999px;
+    margin: 0 -9999px;
+    background: #ebebeb;
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  .certificates {
+    text-align: center;
+    padding: 0 0 15px;
+
+    img {
+      vertical-align: top;
+    }
+  }
+}
+
+.sign-up {
+
+  footer {
+    padding: 5px 0 20px;
+    font: 10px/12px $open-sans-regular;
+    color: #6b6b6b;
+
+    img {
+      vertical-align: top;
+      margin: 0 5px;
+    }
+
+    a {
+      color: $color-blue-light;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,273 @@
+.plan {
+	position: relative;
+	top: -100px;
+	z-index: 4;
+	width: 215px;
+	margin: 0 auto -72px;
+	box-sizing: border-box;
+	padding: 13px 2px 2px;
+	background: #4f8df5;
+	text-align: center;
+	color: #fff;
+
+	.box {
+		color: #696868;
+		background: #f3f5f7;
+		display: block;
+		font: 13px/16px $open-sans-regular;
+		padding: 12px 0 27px;
+
+		strong {
+			display: block;
+			font: 39px/42px $open-sans-semibold;
+			padding: 15px 0 0;
+		}
+	}
+
+	.price {
+		display: block;
+		text-align: center;
+		font: 47px/50px $open-sans-semibold;
+		padding: 6px 0 5px;
+
+		span {
+			font: 27px/30px $open-sans-bold;
+			vertical-align: middle;
+			display: inline-block;
+			margin: -10px 8px 0 0;
+		}
+
+		sup {
+			vertical-align: top;
+			font: 17px/20px $open-sans-regular;
+			margin: 4px 0 0 5px;
+			display: inline-block;
+		}
+	}
+
+	.confirm {
+		color: #696868;
+		background: #f3f5f7;
+		display: block;
+		font: 15px/19px $open-sans-regular;
+		padding: 28px 0 29px;
+		color: #4285f4;
+
+		img {
+			vertical-align: top;
+			margin: 4px 5px 0 0;
+		}
+	}
+
+	ul {
+		background: #f3f5f7;
+		color: #696868;
+		font: 13px/16px $open-sans-regular;
+		padding: 39px 0 24px;
+
+		li {
+			padding: 0 0 27px;
+		}
+
+		strong {
+			font-family: $open-sans-bold;
+		}
+
+		.btn {
+			margin-top: 10px;
+			width: 116px;
+			min-width: auto;
+			height: 43px;
+			line-height: 43px;
+		}
+	}
+}
+
+.change {
+	display: block;
+	text-align: center;
+	text-decoration: underline;
+	color: $color-blue-light;
+	font: 13px/16px $open-sans-regular;
+	margin: 0 auto 62px;
+	max-width: 30%;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.sign-up {
+
+	h3 {
+		text-align: center;
+		font-family: $open-sans-regular;
+		margin: 0 0 65px;
+
+		&.active {
+			font-size: 27px;
+			margin: 0 0 62px;
+			color: $color-blue-heading;
+		}
+	}
+}
+
+//steps...
+.step-a {
+	max-width: 425px;
+	margin: 0 auto 72px;
+}
+.step-b {
+	max-width: 576px;
+	margin: 0 auto 72px;
+}
+
+//results
+.results {
+	width: 816px;
+	margin: -17px auto 44px;
+	border: solid $color-form-border;
+	border-width: 1px 0;
+	padding: 25px 0 25px;
+	overflow: hidden;
+
+	.item {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		border-top: 1px solid $color-form-border;
+		margin: 25px 0 0;
+		padding: 25px 53px 0;
+		flex:1;
+
+		&:first-child {
+			padding-top: 0;
+			margin-top: 0;
+			border: none;
+		}
+	}
+
+	& img {
+		vertical-align: top;
+		margin: 0 16px 0 0;
+		float: left;
+	}
+
+	.name {
+		display: block;
+		overflow: hidden;
+		font-size: 18px;
+		line-height: 21px;
+		color: #323333;
+		padding: 7px 0 0;
+		flex:1;
+
+		span {
+			display: block;
+			color: $color-grey;
+			font-size: 14px;
+			line-height: 16px;
+			padding: 7px 0 0;
+		}
+	}
+
+	.edit {
+		float: right;
+		padding: 27px 0 0;
+		background: url(../images/ico-edit.png) no-repeat 50% 6px;
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	.info {
+		display: flex;
+		flex:1;
+		align-items: center;
+		flex-direction: row;
+
+		span {
+			display: block;
+			margin: 0 10% 0 0;
+		}
+		img {
+			margin: 0 3% 0 0;
+			float: none;
+			display: block;
+			vertical-align: middle;
+		}
+	}
+}
+
+//summary
+
+.summary {
+	width: 245px;
+	margin: 0 auto;
+	padding: 26px 0 73px;
+
+	& > span {
+		display: block;
+		overflow: hidden;
+		padding: 0 0 45px;
+		font-size: 14px;
+		line-height: 16px;
+
+		span {
+			float: right;
+			color: $color-blue-light;
+		}
+
+		&.total {
+			border-top: 1px solid $color-form-border;
+			padding-top: 47px;
+		}
+	}
+
+	.btn {
+		margin-top: 34px;
+	}
+}
+
+@media screen and (max-width: $mobile) {
+
+	.plan {
+		top: 0;
+		margin: 0 auto 20px;
+	}
+
+	.step-b,
+	.step-a {
+		padding: 0 5px;
+	}
+
+	.results {
+		width: auto;
+
+		.item {
+			padding: 25px 20px 0;
+
+			.info {
+				float: none;
+				flex-wrap: wrap;
+				flex-shrink: 2;
+
+				img {
+					float: left;
+					width: 5%;
+					margin: 0 0 10px;
+
+					&:only-child {
+						width: auto;
+					}
+				}
+
+				span {
+					margin: 0 0 10px;
+					width: 95%;
+					padding: 0 0 0 15px;
+					box-sizing: border-box;
+				}
+			}
+		}
+	}
+}

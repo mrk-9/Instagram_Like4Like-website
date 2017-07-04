@@ -1,0 +1,50 @@
+.promo-area {
+	min-height: 400px;
+	background: url(../images/img-banner-02.jpg) no-repeat;
+	background-size: cover;
+	color: #fff;
+	text-align: center;
+	font: 19px/23px $open-sans-regular;
+	margin: 0 0 63px;
+
+	.holder {
+		max-width: 914px;
+		margin: 0 auto;
+		padding: 104px 0 0;
+		position: relative;
+	}
+
+	h1 {
+		font: 47px/50px $open-sans-regular;
+		margin: 0 0 30px;
+		letter-spacing: 0;
+	}
+
+	p {
+		margin: 0 0 85px;
+	}
+
+	a {
+		color: #fff;
+		font-family: $open-sans-semibold;
+	}
+
+	strong {
+		font-family: $open-sans-bold;
+	}
+}
+
+
+@media screen and (max-width: $mobile) {
+	.promo-area {
+
+		h1 {
+			font-size: 35px;
+			line-height: 40px;
+		}
+
+		.holder {
+			padding: 60px 5px 20px;
+		}
+	}
+}

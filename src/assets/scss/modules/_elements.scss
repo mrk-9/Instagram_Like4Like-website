@@ -1,0 +1,294 @@
+//heading
+h1 {
+  text-align: center;
+  font: 51px/60px $open-sans-bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 0 0 35px;
+}
+
+h2 {
+  text-align: center;
+  font: 36px/40px $open-sans-regular;
+  color: $color-blue-heading;
+  text-transform: uppercase;
+  overflow: hidden;
+  margin: 0 0 56px;
+
+  &:before,
+  &:after {
+    background-color: $color-grey;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+  }
+  &:before {
+      right: 30px;
+      margin-left: -50%;
+  }
+  &:after {
+      left: 30px;
+      margin-right: -50%;
+  }
+}
+
+h3 {
+  font: 25px/35px $open-sans-semibold;
+  margin: 0 0 30px;
+  color: #4b4b4c;
+  text-align: center;
+}
+
+.ttl {
+  display: block;
+  font: 19px/23px $open-sans-semibold;
+  color: #4b4b4c;
+  overflow: hidden;
+  padding: 0 0 21px;
+
+  img {
+    float: left;
+    vertical-align: top;
+    margin: 0 10px 0 0;
+  }
+}
+
+//some small elements and helpers
+.insta {
+  text-indent: -9999px;
+  overflow: hidden;
+  width: 49px;
+  height: 49px;
+  display: block;
+  background: url(../images/ico-instagram.png) no-repeat;
+  margin: 0 auto 15px;
+
+  &:before {
+    content:'';
+    position: absolute;
+    left: 0;
+    width: 44%;
+    height: 1px;
+    background: #fff;
+    margin: 22px 0 0;
+  }
+
+  &:after {
+    content:'';
+    position: absolute;
+    right: 0;
+    width: 44%;
+    height: 1px;
+    background: #fff;
+    margin: 22px 0 0;
+  }
+}
+
+//buttons
+.btn {
+  display: inline-block;
+  text-align: center;
+  font: 19px/23px $open-sans-regular;
+  color: #fff;
+  background: $color-blue-light;
+  border-radius: 25px;
+  min-width: 223px;
+  height: 23px;
+  padding: 14px 5px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+    background: lighten($color-blue-light, 5%);
+  }
+
+  &.light {
+    background: $color-blue-extralight;
+
+    &:hover {
+      background: lighten($color-blue-extralight, 5%);
+    }
+  }
+
+  &.black {
+    background: #333;
+    color: #fff;
+    border: 2px solid #fff;
+    margin: 0 34px;
+
+    img {
+      margin: 0 15px 0 0;
+      vertical-align: top;
+    }
+
+    &:hover {
+      background: lighten(#333, 10%);
+    }
+  }
+
+  &.dashed {
+    display: block;
+    max-width: 233px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    &:before,
+    &:after {
+      content:'';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 35%;
+      height: 1px;
+      background: $color-grey;
+    }
+
+    &:after {
+      left: auto;
+      right: 0;
+    }
+  }
+
+  &.submit {
+    background: $color-btn-red;
+    margin: 0 auto;
+    font: 15px/48px $open-sans-regular;
+    display: block;
+    padding: 0 10px;
+    height: 48px;
+    min-width: 150px;
+
+    &:hover {
+      background: lighten($color-btn-red, 10%);
+    }
+  }
+}
+
+a.btn {
+
+  &.submit {
+    max-width: 250px;
+  }
+}
+
+.btn-holder {
+  overflow: hidden;
+  position: relative;
+  margin: 0 0 50px;
+}
+
+.arrow {
+  display: block;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: #fff url(../images/ico-arrow-01.png) no-repeat 50% 50% ;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  margin: 0 auto;
+  position: relative;
+  bottom: -21px;
+}
+
+.terms-cond {
+  text-align: center;
+  font: 13px/16px $open-sans-regular;
+  color: #a9a8a8;
+  display: block;
+  margin: 0 0 40px;
+
+  a {
+    color: #444;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+
+.descr {
+  display: block;
+  font: 15px/26px $open-sans-regular;
+  margin: 0 0 47px;
+}
+
+.address {
+  text-align: center;
+  font: 15px/18px $lato-regular;
+  color: #444;
+  padding: 0 0 67px;
+
+  a {
+    color: #444;
+  }
+
+  li {
+    padding: 0 0 9px;
+
+    &.phone {
+      padding-top: 14px;
+      font-size: 14px;
+    }
+  }
+
+  strong {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+
+  h1 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  h2 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .arrow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  h1 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  h2 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .btn-holder {
+
+  }
+
+  .btn.dashed {
+
+    &:before,
+    &:after {
+      background: none;
+    }
+  }
+
+  .btn.black {
+    margin-top: 25px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

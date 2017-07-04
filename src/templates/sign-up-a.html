@@ -1,0 +1,32 @@
+{% include "partials/_head.html" %}
+<div class="page sign-up">
+  {% include "partials/_header-sign.html" %}
+  <div class="plan">
+    <span class="box">
+      Liks Per Post
+      <strong>100</strong>
+    </span><!-- / box -->
+    <strong class="price"><span>$</span>3<sup>29</sup></strong>
+    <span class="confirm"><img src="assets/images/ico-accept.png" alt="accept">One Time purchases</span>
+  </div><!-- / plan -->
+  <div class="wrapper">
+    <a href="#" class="change">Change Package</a>
+    <h3 class="active">ADD INSTAGRAM ACCOUNT</h3>
+    <div class="step-a">
+      <form action="#">
+        <div class="txt-holder">
+          <label for="lbl-username"><img src="assets/images/img-instagram.png" alt="instagram"></label>
+          <input id="lbl-username" type="text" placeholder="Username">
+        </div><!-- / txt-holder -->
+        <input type="submit" class="btn submit" value="Confirm">
+      </form>
+    </div><!-- / step-a -->
+    <h3>CREATE LOG IN</h3>
+    <h3>BILLING</h3>
+    <h3>SUMMARY</h3>
+    {% include "partials/_footer-sign.html" %}
+  </div><!-- / wrapper -->
+</div><!-- / page -->
+</body>
+{% include "partials/_scripts.html" %}
+</html>

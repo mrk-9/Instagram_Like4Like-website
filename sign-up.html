@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta https-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Celebus | A community to share Instagram likes and views for free</title>
+
+  <!-- CSS -->
+  <!-- <link rel="stylesheet" href="assets/css/vendors.min.css"> -->
+  <link rel="stylesheet" href="assets/css/main.min.css">
+  <!-- IE -->
+  <!--[if lt IE 9]>
+    <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
+    <!-- Begin Google Analytics Script -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','httpss://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46044477-14', 'auto');
+  ga('send', 'pageview');
+</script>
+  <!-- End Begin Google Analytics Script -->
+</head>
+<body>
+
+
+<div class="page">
+  <header>
+  <a href="index" class="logo">celeb us</a>
+  <nav>
+
+  </nav>
+    <ul>
+    <li><a href="log-in">Log In</a></li>
+    <li><a href="sign-up">Sign Up</a></li>
+  </ul>
+  <a href="#" class="mobile-trigger">open mobile menu</a>
+  <span class="mobile-overlay"></span>
+</header>
+
+  <div class="promo-area">
+    <div class="holder">
+      <h1>Create Your Free Account</h1>
+      <p>If you already have an account, login here: <a href="log-in">Log In</a></p>
+      <span class="insta">instagram</span>
+      <a href="#" class="arrow">arrow</a>
+    </div><!-- / holder -->
+  </div><!-- / promo-area -->
+  <div class="login">
+    <h3>Join the 1.0 M + Members</h3>
+    <div class="step-b">
+      <!-- <form action="#"> -->
+      <form action="contact.php" method="post">
+        <div class="txt-holder">
+          <label for="lbl-username"><img src="assets/images/ico-profile.png" alt="profile"></label>
+          <input id="lbl-username" type="text" placeholder="Instagram Username..." name="username" required>
+        </div>
+        <div class="txt-holder">
+          <label for="lbl-email"><img src="assets/images/ico-mail.png" alt="profile"></label>
+          <input id="lbl-email" type="text" placeholder="Email Address..."  name="email">
+        </div>
+        <div class="password">
+          <div class="txt-holder">
+            <label for="lbl-hpassword"><img src="assets/images/ico-password.png" alt="password"></label>
+            <input id="lbl-password" type="password" placeholder="Instagram Password..." name="password" required>
+          </div>
+        </div>
+        <p class="terms-cond">By clicking the button below, you agree to the <a href="#">Terms &amp; Conditions</a></p>
+        <input type="submit" class="btn submit" id='btn_submit' value="Sign Up">
+        <script type="text/javascript">
+          function validateEmail(email)
+          {
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(email);
+          }
+          function validate(event)
+          {
+            var username = document.getElementById("lbl-username").value;
+            var email = document.getElementById("lbl-email").value;
+            var password = document.getElementById("lbl-password").value;
+
+            /*if(username == ""){
+              event.preventDefault();
+              alert("username" + " is not valid :(");
+              return false;
+            }*/
+            /*if(password == ""){
+              event.preventDefault();
+              alert("password" + " is not valid :(");
+              return false;
+            }*/
+            if (!validateEmail(email))
+            {
+              event.preventDefault();
+              alert("Email is not valid.");
+              return false;
+            }
+            return true;
+          }
+          document.getElementById("btn_submit").onclick = validate;
+        </script>
+      </form>
+    </div><!-- / step-b -->
+  </div><!-- / contact-form -->
+  <div class="order-area">
+    <section class="testimonials">
+      <div class="col">
+        <img src="assets/images/img-stars.png" alt="5 stars comment">
+        <em class="title">We are a community of influencers, professionals, and celebrities helping eachother grow</em>
+        <p><em>"Ever since I joined Celebus, my following as grown 60% faster than ever before. I now have way more real followers because my profile is more popular and people are more likely to share my posts because of the increased popularity of them."</em></p>
+        <div class="name">
+          <img src="assets/images/img-face-05.png" alt="user">
+          <span><span>@cocorocha</span>,Toronto</span>
+          <span class="info">3,033 posts    1.2 M followers</span>
+        </div><!-- / name -->
+      </div><!-- / col -->
+      <div class="col">
+        <img src="assets/images/img-stars.png" alt="5 stars comment">
+        <em class="title">We are a community of influencers, professionals, and celebrities helping eachother grow</em>
+        <p><em>"I can't say enough about Celebus! I made a free account and automatically started receiving likes and views from other members. I literally did nothing and my profile grows, its definitely the best way to grow an Instagram following!"</em></p>
+        <div class="name">
+          <img src="assets/images/img-face-06.png" alt="user">
+          <span><span>@hirozzzz</span>,Tokyo</span>
+          <span class="info">2,047 posts    552K followers</span>
+        </div><!-- / name -->
+      </div><!-- / col -->
+    </section><!-- / testimonials -->
+    <section class="start">
+      <h2>Get Started Now!</h2>
+      <p>Receive your free membership to get started and boost your likes, followers, and views today!</p>
+      <div class="btn-area">
+        <a href="sign-up" class="btn black"><img src="assets/images/ico-boost.png" alt="like">Join Us</a>
+      </div><!-- / btn-area -->
+    </section><!-- / start -->
+  </div><!-- / order-area -->
+  <div class="wrapper">
+    <footer>
+  <ul>
+
+  </ul>
+  <p class="copy">Copyright &copy; 2017 <a href="#">Celebus</a>. All Rights Reserved</p>
+</footer>
+
+  </div><!-- / wrapper -->
+</div><!-- / page -->
+</body>
+  <!-- JS -->
+  <script src="httpss://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- <script src="/assets/js/vendors.min.js"></script> -->
+  <script src="assets/js/main.min.js"></script>
+
+</html>

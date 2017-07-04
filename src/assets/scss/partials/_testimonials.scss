@@ -1,0 +1,127 @@
+.testimonials {
+	background: $color-intro;
+	padding: 47px 9999px 49px;
+	margin: 0 -9925px 0;
+	font: 18px/30px $lato-italic;
+	text-align: center;
+	overflow: hidden;
+
+	h2 {
+		margin: 0 -74px 44px;
+	}
+
+	.title {
+		display: block;
+		color: $color-grey-title;
+		padding: 0 0 22px;
+	}
+
+	p {
+		margin: 0 0 47px;
+	}
+
+	.name {
+		width: 35%;
+		margin: 0 auto;
+		text-align: left;
+		font-family: $lato-regular;
+
+		&:after {
+			content:'';
+			clear: both;
+			display: block;
+		}
+
+		img {
+			float: left;
+			margin: -8px 36px 0 9px;
+			border-radius: 50%;
+		}
+
+		& > span {
+			overflow: hidden;
+			display: block;
+			padding: 0 0 5px;
+
+			span {
+				color: #323333;
+			}
+
+			&.info {
+				font-size: 14px;
+				line-height: 17px;
+			}
+		}
+	}
+
+	.col {
+		float: left;
+		width: 41%;
+		margin: -2px 0 0 10%;
+		padding: 0 2%;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		& > img {
+			margin: 0 auto 26px;
+			vertical-align: top;
+			display: block;
+		}
+
+		.name {
+			width: 80%;
+		}
+	}
+
+}
+
+@media screen and (max-width: $tablet) {
+
+	.testimonials {
+
+		.col {
+
+			.name {
+
+				width: 100%;
+
+				img {
+
+					margin: 0 3px 0 0;
+				}
+
+				span {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.testimonials {
+		margin: 0;
+		padding: 20px 5px;
+		.name {
+			width: 80%;
+
+			img {
+
+				margin: 0 3px 0 0;
+			}
+
+			span {
+				display: block;
+			}
+		}
+
+		.col {
+			float: none;
+			width: 100%;
+			margin: 0 ;
+			padding: 0 0 40px;
+		}
+	}
+}

@@ -1,0 +1,63 @@
+{% include "partials/_head.html" %}
+
+<div class="page">
+  {% include "partials/_header.html" %}
+  <div class="promo-area">
+    <div class="holder">
+      <h1>Log In</h1>
+      <p>If you still have no your account, register here: <a href="#">Sign Up</a></p>
+      <span class="insta">instagram</span>
+      <a href="#" class="arrow">arrow</a>
+    </div><!-- / holder -->
+  </div><!-- / promo-area -->
+  <div class="contact-form login">
+    <h3>Log In</h3>
+    <form action="#">
+      <input id="lbl-txt-01" type="text" class="txt" placeholder="Login">
+      <input id="lbl-txt-02" type="text" class="txt" placeholder="Password">
+      <div class="check-row">
+        <input type="checkbox" id="id-check">
+        <label for="id-check">Remember me </label>
+      </div><!-- / check-row -->
+      <input type="submit" class="btn submit">
+      <a href="#" class="forgot">Help, I've forgotten my password</a>
+    </form>
+  </div><!-- / contact-form -->
+  <div class="order-area">
+    <section class="testimonials">
+      <div class="col">
+        <img src="assets/images/img-stars.png" alt="5 stars comment">
+        <em class="title">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</em>
+        <p><em>Sed ut perspiciatis unde omnis iste natus error sit eaque ipsa quae ab illo inventore veritatis et quasi architecto quia voluptas sit aspernatur aut odit aut fugit, sed quia conseqnventore veritatis et sequi nesciunt neque porro ! </em></p>
+        <div class="name">
+          <img src="assets/images/img-face-01.png" alt="user">
+          <span><span>Sarah Davis</span>, Los Angeles</span>
+          <span class="info">1764 posts    27K followers</span>
+        </div><!-- / name -->
+      </div><!-- / col -->
+      <div class="col">
+        <img src="assets/images/img-stars.png" alt="5 stars comment">
+        <em class="title">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</em>
+        <p><em>Sed ut perspiciatis unde omnis iste natus error sit eaque ipsa quae ab illo inventore veritatis et quasi architecto quia voluptas sit aspernatur aut odit aut fugit, sed quia conseqnventore veritatis et sequi nesciunt neque porro ! </em></p>
+        <div class="name">
+          <img src="assets/images/img-face-01.png" alt="user">
+          <span><span>Sarah Davis</span>, Los Angeles</span>
+          <span class="info">1764 posts    27K followers</span>
+        </div><!-- / name -->
+      </div><!-- / col -->
+    </section><!-- / testimonials -->
+    <section class="start">
+      <h2>Get Started Now!</h2>
+      <p>Choose one of the options below to get started. Your Instagram Likes and Followers are only a few clicks away!</p>
+      <div class="btn-area">
+        <a href="#" class="btn black"><img src="assets/images/ico-boost.png" alt="like">Buy Followers</a>
+      </div><!-- / btn-area -->
+    </section><!-- / start -->
+  </div><!-- / order-area -->
+  <div class="wrapper">
+    {% include "partials/_footer.html" %}
+  </div><!-- / wrapper -->
+</div><!-- / page -->
+</body>
+{% include "partials/_scripts.html" %}
+</html>

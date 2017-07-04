@@ -1,0 +1,176 @@
+.order-area {
+	text-align: center;
+	max-width: 1188px;
+	margin: 0 auto;
+
+	h3 {
+		color: $color-blue-heading;
+		font: 31px/35px $open-sans-regular;
+		text-transform: uppercase;
+		margin: 0 0 26px;
+	}
+
+	.row {
+		overflow: hidden;
+		padding: 0 0 41px;
+
+		& > * {
+			float: none;
+			display: inline-block;
+		}
+
+		input {
+			margin: 3px 9px 0 0;
+		}
+	}
+
+	label {
+		font: 19px/23px $open-sans-regular;
+		margin: 0 23px 0 0;
+	}
+}
+
+//options
+
+.options {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 0 0 37px;
+
+	.plan {
+		width: 18%;
+		background: $color-blue-light;
+		padding: 2px;
+		color: #fff;
+		margin: 0;
+		top: 0;
+		margin: 0 0 0 2.5%;
+
+		&:first-child {
+			margin: 0;
+		}
+
+		.box {
+			padding: 21px 0 20px;
+
+			strong {
+				padding: 12px 0 0;
+
+				&:first-child {
+					padding: 0 0 12px;
+				}
+			}
+		}
+
+		.plan-name {
+			padding: 11px 0 12px;
+			background: #f3f5f7;
+			color: $color-blue-heading;
+
+			span {
+				display: block;
+				text-align: center;
+				width: 53px;
+				height: 53px;
+				font: 40px/53px $open-sans-extrabold;
+				background: #fff;
+				color: $color-blue-heading;
+				margin: 0 auto 9px;
+				border-radius: 50%;
+				border: 1px solid #d7d7d7;
+
+				&.free {
+					width: auto;
+					border-radius: 0;
+					margin: 0 15% 9px;
+				}
+			}
+		}
+
+		.price {
+
+			font: 41px/45px $open-sans-extrabold;
+
+			span {
+				font: 27px/30px $open-sans-bold;
+			}
+
+			small {
+				font: 21px/24px $open-sans-regular;
+			}
+		}
+
+		& > ul {
+
+			.ttl {
+				color: $color-blue-heading;
+				font: 15px/17px $open-sans-bold;
+				padding: 0;
+			}
+		}
+
+		.features {
+			background: #fff;
+			overflow: hidden;
+			min-height: 90px;
+			flex-direction: column;
+			justify-content: center;
+			display: flex;
+			color: #696868;
+			padding: 5px 0;
+			font: 13px/20px $open-sans-regular;
+
+			& > strong {
+				font: 15px/18px $open-sans-bold;
+				color: $color-blue-heading;
+				padding: 0;
+			}
+
+			p {
+				margin: 0;
+
+				strong {
+					font-family: $open-sans-bold;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $tablet) {
+
+	.options {
+		flex-wrap: wrap;
+		justify-content: space-around;
+
+		.plan {
+			width: 240px;
+			margin: 0 0 20px !important;
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+
+	.order-area {
+
+		.row {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap:wrap;
+			width: 230px;
+			margin: 0 auto;
+
+			label {
+				text-align: left;
+				margin: 0 0 20px;
+			}
+
+			input {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+}

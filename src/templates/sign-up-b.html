@@ -1,0 +1,56 @@
+{% include "partials/_head.html" %}
+<div class="page sign-up">
+  {% include "partials/_header-sign.html" %}
+  <div class="plan">
+    <span class="box">
+      Liks Per Post
+      <strong>100</strong>
+    </span><!-- / box -->
+    <strong class="price"><span>$</span>3<sup>29</sup></strong>
+    <span class="confirm"><img src="assets/images/ico-accept.png" alt="accept">One Time purchases</span>
+  </div><!-- / plan -->
+  <div class="wrapper">
+    <a href="#" class="change">Change Package</a>
+    <div class="results">
+      <div class="item">
+        <img src="assets/images/img-face-02.png" alt="name">
+        <strong class="name">
+          Sarah Davis
+          <span>1764 posts    27K followers</span>
+        </strong>
+        <a href="#" class="edit">Edit</a>
+      </div><!-- / item -->
+    </div><!-- / results -->
+    <h3 class="active">CREATE LOG IN</h3>
+    <div class="step-b">
+      <form action="#">
+        <div class="txt-holder">
+          <label for="lbl-email"><img src="assets/images/ico-profile.png" alt="profile"></label>
+          <input id="lbl-email" type="text" placeholder="Enter your username">
+        </div><!-- / txt-holder -->
+        <div class="txt-holder">
+          <label for="lbl-username"><img src="assets/images/ico-mail.png" alt="profile"></label>
+          <input id="lbl-username" type="text" placeholder="Enter your email address">
+        </div><!-- / txt-holder -->
+        <div class="password">
+          <div class="txt-holder">
+            <label for="lbl-password"><img src="assets/images/ico-password.png" alt="password"></label>
+            <input id="lbl-password" type="password" placeholder="Enter password">
+          </div><!-- / txt-holder -->
+          <div class="txt-holder">
+            <label for="lbl-password-r"><img src="assets/images/ico-password.png" alt="password"></label>
+            <input id="lbl-password-r" type="password" placeholder="Confirm password">
+          </div><!-- / txt-holder -->
+        </div><!-- / password -->
+        <p class="terms-cond">By clicking the button below, you agree to the <a href="#">Terms &amp; Conditions</a></p>
+        <input type="submit" class="btn submit" value="Agree &amp; Register">
+      </form>
+    </div><!-- / step-b -->
+    <h3>BILLING</h3>
+    <h3>SUMMARY</h3>
+    {% include "partials/_footer-sign.html" %}
+  </div><!-- / wrapper -->
+</div><!-- / page -->
+</body>
+{% include "partials/_scripts.html" %}
+</html>
